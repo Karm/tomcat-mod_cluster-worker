@@ -34,8 +34,8 @@ fi
 export JAVA_OPTS="-server \
                   -Xms${WORKER_MS_RAM:-512m} \
                   -Xmx${WORKER_MX_RAM:-512m} \
-                  -XX:MetaspaceSize=96M \
-                  -XX:MaxMetaspaceSize=256m \
+                  -XX:MetaspaceSize=32M \
+                  -XX:MaxMetaspaceSize=128m \
                   -Djava.net.preferIPv4Stack=true \
                   -Djava.awt.headless=true \
                   -XX:+HeapDumpOnOutOfMemoryError \
